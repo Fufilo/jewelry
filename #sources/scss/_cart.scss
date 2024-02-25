@@ -1,0 +1,127 @@
+@import "_mixins", "_catalog", "_globals", '_fonts', '_header', '_footer';
+.cart {
+    background-color: $bg-FFF5EE;
+    padding: 50px 0 90px 0;
+    .cart__way {
+        @extend %userWay;
+        [class^="cart__way"] {
+            @include text('Open Sans', 20px, 400, $green-173616);
+        }
+        .cart__way1 {
+            font-weight: 600;
+        }
+    }  
+    .cart__wrap {
+        display: flex;
+        .cart__items {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .cart__itemWrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px 16px;
+                background-color: $w;
+                border-radius: 30px;
+                box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
+                .cart__itemImg {
+                    width: 132px;
+                    height: 100px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                }
+                .cart__itemTitle {
+                    @include text('Open Sans', 20px, 600, $green-173616);
+                }
+                .cart__count {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    .cart__countLeft {
+                        @extend %arrowDown;
+                        i {
+                            font-size: 13px;
+                            color: $green-173616;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    .cart__countNum {
+                        @include text('Open Sans', 32px, 600, black);
+                    }
+                    .cart__countRight {
+                        @extend %arrowDown;
+                        i {
+                            font-size: 13px;
+                            color: $green-173616;
+                            transform: rotate(270deg);
+                        }
+                    }
+                }
+                .cart__price {
+                    @include text('Open Sans', 32px, 500, $green-173616);
+                }
+                .cart__favorite {
+                    display: flex;
+                    width: 43px;
+                    height: 43px;
+                    @extend %favorite;
+                }
+            }
+        }
+        .cart__promocode {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25%;
+            margin-left: auto;
+            .cart__promocodeWrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 50%;
+                .cart__summText {
+                    @include text('Open Sans', 18px, 600, $green-173616);
+                    .cart__summ {
+                        @include text('Open Sans', 18px, 400, $green-173616);
+                    }
+                }
+                .cart__discountText {
+                    @include text('Open Sans', 18px, 600, $green-173616);
+                    .cart__discount {
+                        @include text('Open Sans', 18px, 400, $green-173616);
+                    }
+                }
+                .cart__formWrap {
+
+                    .cart__form {
+
+                        .cart__formText {
+                            @include text('Open Sans', 18px, 600, $green-173616);
+                            margin-bottom: 8px;
+                        }
+                        .cart__formField {
+                            background-color: transparent;
+                            border: 1px solid $green-173616;
+                            border-radius: 100px;
+                            width: 220px;
+                            height: 33px;
+                        }
+                    }
+                }
+            }
+            .cart__price {
+                .cart__priceTitle {
+                    @include text('Open Sans', 18px, 600, $green-173616);
+                }
+                .cart__priceText {
+                    @include text('Santa Catarina', 64px, 400, $green-173616);
+                    span {
+                        @include text('Santa Catarina', 32px, 400, $green-173616);
+                    }
+                }
+            }
+        }
+    }
+}

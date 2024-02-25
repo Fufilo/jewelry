@@ -1,0 +1,369 @@
+@import "_mixins", "_catalog", "_globals", '_fonts', '_header', '_footer', '_cart';
+.container {
+    margin: 0 auto;
+    max-width: 1224px;
+}
+.aboutUs {
+    background: linear-gradient(288deg, #FFDBC0 -66.54%, #FFF6EF 102.16%);
+    padding: 100px 0;
+    .aboutUs__wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        .aboutUs__info {
+        width: 53%;
+            .aboutUs__title {
+                @include text('Santa Catarina', 64px, 500, $green-173616);
+                width: 63%;
+                line-height: 65px;
+            }
+            .aboutUs__descr {
+                @include text('Open Sans', 16px, 600, $green-173616);
+                margin: 15px 0;
+                line-height: 25px;
+            }
+            .aboutUs__btn {
+                display: inline-block;
+                border-radius: 100px;
+                background-color: $green-173616;
+                @include text('Open Sans', 20px, 600, $w);
+                border: 6px $green-173616 solid;
+                padding: 15px 40px;
+                transition: all 0.3s ease;
+                &:hover { 
+                    background-color: transparent;
+                    border: 6px $golden solid;
+                    color: $green-173616;
+                }
+                &:active {
+                    background-color: $golden;
+                }
+            }
+        }
+        .aboutUs__image {
+            position: absolute;
+            top: 25px;
+            right: -62px;
+            img {
+                height: 660px;
+            }
+        }
+    } 
+}
+.catalog {
+    background-color: $bg-FFF5EE;
+    padding: 90px 0;
+    .catalog__title {
+        @include text('Santa Catarina', 64px, 400, $green-173616);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .catalog__wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        justify-content: space-between;
+        grid-column-gap: 16px;
+        grid-row-gap: 40px;
+        .catalog__card {
+            background-color: $w;
+            border-radius: 70px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-15px);
+                outline: 6px solid $golden;
+                img {
+                    opacity: 0.5;
+                }
+            }
+            &:active {
+                background-color: $golden;
+            }
+            .catalog__cardImage {
+                img {
+                    border-radius: 70px;
+                    width: 100%;
+                    height: 310px;
+                }
+            }
+            .catalog__cardText {
+                text-align: center;
+                @include text('Open Sans', 20px, 400, $green-173616);
+                margin: 20px 0 10px 0;
+            }
+        }
+    }
+}
+.collab {
+    background-color: $green-173616;
+    padding: 95px 0;
+    position: relative;
+    .collab__line {
+            width: 100%;
+            height: 1px;
+            background-color: $golden;
+            position: absolute;
+            top: 150px;
+        }
+    .collab__wrap {
+        display: flex;
+        .collab__title {
+            display: inline-block;
+            padding: 10px 40px 0px 40px;
+            border: 1px solid $golden;
+            border-radius: 100px;
+            @include text('Santa Catarina', 64px, 400, $w);
+            background-color: $green-173616;
+            z-index: 1;
+            text-transform: uppercase;
+        }
+    }
+    .collab__descr {
+        @include text('Open Sans', 20px, 400, $w);
+        width: 58%;
+        margin: 24px 0 0 0;
+    }
+    .collab__images {
+        height: 1090px;
+        width: 100%;
+        position: relative;
+        .collab__img-1 {
+            position: absolute;
+            top: 33px;
+            left: -50px;
+        }
+        .collab__img-2 {
+            position: absolute;
+            top: 6px;
+            left: 21%;
+        }
+        .collab__img-3 {
+            position: absolute;
+            top: -115px;
+            right: -62px;
+        }
+        .collab__img-4 {
+            position: absolute;
+            bottom: 90px;
+            left: -64px;
+        }
+        .collab__img-5 {
+            position: absolute;
+            bottom: 10px;
+            left: 34%;
+        }
+        .collab__img-6 {
+            position: absolute;
+            bottom: 160px;
+            right: -39px;
+        }
+    }
+    .collab__dates {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .collab__btn {
+            background-color: #FDF1E8;
+            @include text('Open Sans', 20px, 600, $green-173616);
+            padding: 35px 60px;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            &:hover {
+                outline: 6px solid $golden;
+                background-color: transparent;
+                color: #FDF1E8;
+            }
+            &:active {
+                background-color: $golden;
+            }
+        }
+        .collab__text {
+            @include text('Santa Catarina', 36px, 300, $w);
+        }
+    }
+}
+.sale {
+    background-color: $bg-FFF5EE;
+    padding: 95px 0;
+    position: relative;
+    .sale__bg { 
+        background: url(/img/sale/sale.png);
+        height: 65px;
+        position: absolute;
+        top: 190px;
+        width: 100%
+    }
+    .sale__title {
+        @include text('Santa Catarina', 300px, 400, $golden);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .sale__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .sale__card {
+            background-color: $w;
+            padding: 10px;
+            border-radius: 65px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: translateY(-15px);
+                outline: 6px solid $golden;
+                img {
+                    opacity: 0.5;
+                }
+            }
+            &:active {
+                background-color: $golden;
+            }
+            .sale__cardImage {
+                img {
+                    width: 260px;
+                    height: 718px;
+                    border-radius: 65px;
+                }
+            }
+            .sale__cardText {
+                @include text('Open Sans', 20px, 400, $green-173616);
+                text-align: center;
+                margin: 35px 0 20px 0;
+            }
+        }
+    }
+}
+.footer {
+    padding-bottom: 45px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, $bg-FFF5EE 75%, $w 80%);
+    z-index: 2;
+    .footer__wave {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    .footer__wrap {
+        height: 500px;
+        display: flex;
+        position: relative;
+        z-index: 3;
+        .footer__form {
+            width: 50%;
+            margin-top: auto;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .footer__logo {
+                display: inline-block;
+            }
+            .footer__descr {
+                @include text('Santa Catarina', 36px, 400, $green-173616);
+                text-transform: uppercase;
+                line-height: 35px;
+            }
+            .footer__wrapper {
+                .footer__formText {
+                    @include text('Open Sans', 16px, 400, $green-173616);
+                    width: 71%;
+                }
+                .footer__field {
+                    display: flex;
+                    align-items: center;
+                    input {
+                        padding: 7px 14px;
+                        border-radius: 100px;
+                        border: 1px solid $li-green;
+                        width: 70%;
+                        outline: none;
+                        margin: 10px 8px 10px 0;
+                    }
+                    input::-webkit-input-placeholder {
+                        @include text('Open Sans', 14px, 400, $green-173616);
+                        opacity: 0.7;
+                    }
+                    button {
+                        background-color: $green-173616;
+                        @include text('Open Sans', 12px, 600, $w);
+                        padding: 8px 40px;
+                        border: none;
+                        border-radius: 100px;
+                        cursor: pointer;
+                    }
+                }
+                .footer__checkbox {
+                    display: flex;
+                    align-items: center;
+                    label {
+                        margin-left: 8px;
+                        @include text('Open Sans', 12px, 400, $green-173616);
+                        opacity: 0.7;
+                        width: 30%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .footer__socials {
+            margin-top: auto;
+            height: 65%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            .footer__nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 13px;
+                    align-items: flex-end;
+                    li {
+                        .footer__navItem {
+                            @include text('Open Sans', 16px, 400, $green-173616);
+                        }
+                    }
+                }
+            }
+            .footer__linksWrap {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 80%;
+                .footer__text {
+                    @include text('Open Sans', 16px, 400, $green-173616);
+                    margin-right: 8px;
+                }
+                .footer__links {
+                    display: grid;
+                    grid-template-columns: repeat(4, 44px);
+                    grid-column-gap: 6px;
+                    align-items: center;
+                    justify-content: space-between;
+                    .footer__linksItem {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 43px;
+                        height: 43px;
+                        border: 1px solid $green-173616;
+                        font-size: 18px;
+                        border-radius: 10px;
+                        i {
+                            color: $li-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

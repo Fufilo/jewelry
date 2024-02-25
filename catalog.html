@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#sources/bootstrap-reboot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="fonts/icofont/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="img/favicon.svg">
+    <title>DIJ</title>
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <header class="header__wrap">
+                <div class="header__logotype">
+                    <img src="img/logo.png" alt="logotype" width="51" height="72">
+                </div>
+                <ul class="header__menu">
+                    <li><a href="index.html" class="header__menuItem">Главная</a></li>
+                    <li><a href="catalog.html" class="header__menuItem">Каталог</a></li>
+                    <li><a href="#" class="header__menuItem">Коллаборации</a></li>
+                    <li><a href="#" class="header__menuItem">Распродажа</a></li>
+                    <li><a href="#" class="header__menuItem">Контакты</a></li>
+                </ul>
+                <div class="header__search">
+                    <form action="#">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" id="search" placeholder="Поиск">
+                    </form>
+                </div>
+                <div class="header__btns">
+                    <a href="#" class="header__btn1"><i class="icon-heart"></i></a>
+                    <a href="cart.html" class="header__btn2"><i class="icon-cart"></i></a>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section class="catalogPage">
+        <div class="container">
+            <div class="catalogPage__ways">
+                <p class="catalogPage__way1">Главная</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="15" viewBox="0 0 6 15" fill="none">
+                    <path d="M3.1819 14C-1.72737 11.2308 3.1819 2 3.1819 2C3.1819 2 7.27263 10.6154 3.1819 14Z" stroke="#173616"/>
+                </svg>
+                <p class="catalogPage__way2">Каталог</p>
+            </div>
+            <div class="catalogPage__wrapper">
+                <div class="sidebar">
+                    <div class="sidebar__border">
+                        <div class="sidebar__filters">
+                            <p class="sidebar__filterName">Материалы</p>
+                            <div class="sidebar__filterWrap">
+                                <p class="sidebar__filterItem">Золото</p>
+                                <p class="sidebar__filterItem">Серебро</p>
+                                <p class="sidebar__filterItem">Белое золото</p>
+                                <p class="sidebar__filterItem">Титан</p>
+                                <p class="sidebar__filterItem">Бронза</p>
+                                <p class="sidebar__filterItem">Латунь</p>
+                            </div>
+                        </div>
+                        <div class="sidebar__filters">
+                            <p class="sidebar__filterName">Покрытие</p>
+                            <div class="sidebar__filterWrap">
+                                <p class="sidebar__filterItem">Золото</p>
+                                <p class="sidebar__filterItem">Радий</p>
+                                <p class="sidebar__filterItem">Жёлтое золото</p>
+                                <p class="sidebar__filterItem">Палладий</p>
+                                <p class="sidebar__filterItem">Биколор</p>
+                                <p class="sidebar__filterItem">Эмаль</p>
+                            </div>
+                        </div>
+                        <div class="sidebar__filters">
+                            <p class="sidebar__filterName">Вставка</p>
+                            <div class="sidebar__filterWrap">
+                                <p class="sidebar__filterItem">Фианит</p>
+                                <p class="sidebar__filterItem">Бриллиант</p>
+                                <p class="sidebar__filterItem">Кварц</p>
+                                <p class="sidebar__filterItem">Жемчуг</p>
+                                <p class="sidebar__filterItem">Агат</p>
+                                <p class="sidebar__filterItem">Сапфир</p>
+                                <p class="sidebar__filterItem">Янтарь</p>
+                                <p class="sidebar__filterItem">Слоновая кость</p>
+                                <p class="sidebar__filterItem">Дерево</p>
+                                <p class="sidebar__filterItem">Гранат</p>
+                                <p class="sidebar__filterItem">Рубин</p>
+                                <p class="sidebar__filterItem">Аметист</p>
+                                <p class="sidebar__filterItem">Без вставок</p>
+                            </div>
+                        </div>
+                        <div class="sidebar__filters">
+                            <p class="sidebar__filterName">Дополнительно</p>
+                            <div class="sidebar__filterWrap">
+                                <p class="sidebar__filterItem">Гравировка</p>
+                                <p class="sidebar__filterItem">На фалангу</p>
+                                <p class="sidebar__filterItem">Парные</p>
+                                <p class="sidebar__filterItem">Обручальные</p>
+                                <p class="sidebar__filterItem">Комплект колец</p>
+                                <p class="sidebar__filterItem">Мужские</p>
+                                <p class="sidebar__filterItem">Детские</p>
+                            </div>
+                        </div>
+                        <div class="sidebar__prices">
+                            <p class="sidebar__pricesName">Цена</p>
+                            <div class="sidebar__wrap">
+                                <div class="sidebar__scroller">
+
+                                </div>
+                                <form class="sidebar__form">
+                                    <input type="number" class="sidebar__price1" min="0" max="55000" placeholder="1000&#8381;"></input>
+                                    <input type="number" class="sidebar__price2" min="0" max="55000" placeholder="55000&#8381;"></input>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__confirm">Применить</div>
+                </div>
+                <div class="products">
+                    <div data-id="01" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard1.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольцо серебряное с гравировкой</p>
+                        <p class="products__price">7000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="02" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard2.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольцо латунное стилизованное</p>
+                        <p class="products__price">10000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="03" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard3.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольца обручальные золотые</p>
+                        <p class="products__price">30000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="04" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard4.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольца серебряные с кварцем (3 шт.)</p>
+                        <p class="products__price">6000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="05" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard5.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольцо золотое с фианитами</p>
+                        <p class="products__price">19000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="06" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard6.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольца мужские серебряные (2 шт.)</p>
+                        <p class="products__price">5000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="07" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard7.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольцо из белого золота с фианитами</p>
+                        <p class="products__price">17000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="08" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard8.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольцо из белого золота “Витраж”</p>
+                        <p class="products__price">16000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                    <div data-id="09" class="products__card">
+                        <div class="products__favorites"><i class="icon-heart"></i></div>
+                        <img src="img/catalog/catalogCard9.png" alt="catalogImg" class="products__img">
+                        <p class="products__title">Кольца золотые с жемчугом (2 шт.)</p>
+                        <p class="products__price">23000&#8381;</p>
+                        <div data-cart class="products__btn">В корзину</div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogPage__pag">
+                <div class="catalogPage__pagWrap">
+                    <p class="catalogPage__pagItem">1</p>
+                    <p class="catalogPage__pagItem">2</p>
+                    <p class="catalogPage__pagItem">3</p>
+                    <p class="catalogPage__pagItem">4</p>
+                    <div class="catalogPage__pagArrowWrap">
+                        <div class="catalogPage__pagArrowLeft"><i class="icon-arrowLeft"></i></div>
+                        <div class="catalogPage__pagArrowRight"><i class="icon-arrowRight"></i></div>
+                    </div>
+                    <p class="catalogPage__pagItem">5</p>
+                    <p class="catalogPage__pagItem">6</p>
+                    <p class="catalogPage__pagItem">7</p>
+                    <p class="catalogPage__pagItem">8</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540" fill="none" preserveAspectRatio="none">
+                    <path d="M0 41.0933C0 41.0933 292.755 -51.3666 435.5 41.0933C523.5 98.0935 561.406 205.928 709.5 266.593C792.5 300.593 905.862 311.621 1039 220.593C1146 147.436 1187.5 81.5933 1241.5 41.0933C1303.52 -5.41808 1440 41.0933 1440 41.0933V521.093H0V41.0933Z" fill="white"/>
+                </svg>
+            </div>
+            <footer class="footer__wrap">
+                <div class="footer__form">
+                    <div class="footer__logo">
+                        <img src="img/logo.png" alt="logotype" width="51" height="72">
+                    </div>
+                    <p class="footer__descr">Подпишись и выиграй бесплатную фотосессию в украшениях DIJ!</p>
+                    <div class="footer__wrapper">
+                        <form action="#">
+                            <p class="footer__formText">Оформите подписку, чтобы моментально узнавать о новинках и крутых коллаборациях:</p>
+                            <div class="footer__field">
+                                <input type="email" placeholder="Ваш email">
+                                <button type="submit">Готово</button>
+                            </div>
+                            <div class="footer__checkbox">
+                                <input type="checkbox" id="personal">
+                                <label for="personal">Даю согласие на обработку персональных данных</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer__nav">
+                        <ul>
+                            <li><a href="index.html" class="footer__navItem">Главная</a></li>
+                            <li><a href="catalog.html" class="footer__navItem">Каталог</a></li>
+                            <li><a href="#" class="footer__navItem">Коллаборации</a></li>
+                            <li><a href="#" class="footer__navItem">Распродажа</a></li>
+                            <li><a href="#" class="footer__navItem">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__linksWrap">
+                        <p class="footer__text">Новости DIJ в социальных сетях:</p>
+                        <div class="footer__links">
+                            <a href="#" class="footer__linksItem"><i class="icon-vk"></i></a>
+                            <a href="#" class="footer__linksItem"><i class="icon-tg"></i></a>
+                            <a href="#" class="footer__linksItem"><i class="icon-inst"></i></a>
+                            <a href="#" class="footer__linksItem"><i class="icon-wa"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
